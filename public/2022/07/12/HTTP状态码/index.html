@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>HTTP状态码 | 洋芋坨坨</title><meta name="author" content="汪阿杰"><meta name="copyright" content="汪阿杰"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HTTP状态码1xx:信息提示这类状态代码标识临时的响应。客户端在收到常规响应之前，应准备接受一个或多个1xx响应。    HTTP状态码 说明    100 继续   101 切换协议   2xx:成功这类状态代码表明服务器成功地接受了客户端请求。    HTTP状态码 说明    200 确定。客户端请求已成功。   201 已创建。   202 已接受。   203 非权威性信息。   20">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTTP状态码">
+<meta property="og:url" content="http://example.com/2022/07/12/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/index.html">
+<meta property="og:site_name" content="洋芋坨坨">
+<meta property="og:description" content="HTTP状态码1xx:信息提示这类状态代码标识临时的响应。客户端在收到常规响应之前，应准备接受一个或多个1xx响应。    HTTP状态码 说明    100 继续   101 切换协议   2xx:成功这类状态代码表明服务器成功地接受了客户端请求。    HTTP状态码 说明    200 确定。客户端请求已成功。   201 已创建。   202 已接受。   203 非权威性信息。   20">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/images/computer2.jpg">
+<meta property="article:published_time" content="2022-07-12T03:10:10.000Z">
+<meta property="article:modified_time" content="2023-08-10T09:37:02.641Z">
+<meta property="article:author" content="汪阿杰">
+<meta property="article:tag" content="网络">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/images/computer2.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="http://example.com/2022/07/12/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"简","msgToSimplifiedChinese":"繁"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HTTP状态码',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-10 17:37:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/%E6%96%87%E7%AB%A0/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/%E6%A0%87%E7%AD%BE/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/%E5%88%86%E7%B1%BB/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/images/computer2.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="洋芋坨坨"><img class="site-icon" src="/img/avatar.png"/><span class="site-name">洋芋坨坨</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HTTP状态码</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-12T03:10:10.000Z" title="发表于 2022-07-12 11:10:10">2022-07-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-10T09:37:02.641Z" title="更新于 2023-08-10 17:37:02">2023-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/%E5%88%86%E7%B1%BB/%E7%BD%91%E7%BB%9C/">网络</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HTTP状态码"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h1><h2 id="1xx-信息提示"><a href="#1xx-信息提示" class="headerlink" title="1xx:信息提示"></a>1xx:信息提示</h2><p>这类状态代码标识临时的响应。客户端在收到常规响应之前，应准备接受一个或多个1xx响应。</p>
+<table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>100</td>
+<td>继续</td>
+</tr>
+<tr>
+<td>101</td>
+<td>切换协议</td>
+</tr>
+</tbody></table>
+<h2 id="2xx-成功"><a href="#2xx-成功" class="headerlink" title="2xx:成功"></a>2xx:成功</h2><p>这类状态代码表明服务器成功地接受了客户端请求。</p>
+<table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>200</td>
+<td>确定。客户端请求已成功。</td>
+</tr>
+<tr>
+<td>201</td>
+<td>已创建。</td>
+</tr>
+<tr>
+<td>202</td>
+<td>已接受。</td>
+</tr>
+<tr>
+<td>203</td>
+<td>非权威性信息。</td>
+</tr>
+<tr>
+<td>204</td>
+<td>无内容。</td>
+</tr>
+<tr>
+<td>205</td>
+<td>重置内容。</td>
+</tr>
+<tr>
+<td>206</td>
+<td>部分内容。表明已部分下载了一个文件。可以续传损坏的下载，或者将下载拆分为多个并发的流。</td>
+</tr>
+<tr>
+<td>207</td>
+<td>多状态(WebDAV)。此消息之前应该还有一条XML消息，其中可能包含几个单独的响应代码，具体取决于发出多少个子请求。</td>
+</tr>
+</tbody></table>
+<h2 id="3xx-重定向"><a href="#3xx-重定向" class="headerlink" title="3xx:重定向"></a>3xx:重定向</h2><p>客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同页面，或通过代理服务器重复请求。</p>
+<table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>301</td>
+<td>已永久移动。此请求和之后所有的请求应该转到制定的URI。</td>
+</tr>
+<tr>
+<td>302</td>
+<td>对象已移动。对于基于表单的身份验证，此消息通常表示为“对象已移动”。请求的资源临时驻留在不同的URI。由于重定向有时可能会改变。客户端将来在请求时应该继续使用 RequestURI。只有在CacheControl或Expires标题字段中指示，此响应才能够缓存。</td>
+</tr>
+<tr>
+<td>304</td>
+<td>未修改。客户端请求的文档已在其缓存中，文档自缓存以来尚未被修改过。客户端使用文档的缓存副本，而不从服务器下载文档。</td>
+</tr>
+<tr>
+<td>307</td>
+<td>临时重定向</td>
+</tr>
+</tbody></table>
+<h2 id="4xx-客户端错误"><a href="#4xx-客户端错误" class="headerlink" title="4xx:客户端错误"></a>4xx:客户端错误</h2><p>发生错误，客户端似乎有问题。例如，客户端请求不存在的页面，客户端未提供有效的身份验证信息。</p>
+<table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>400</td>
+<td>错误的请求。</td>
+</tr>
+<tr>
+<td>401</td>
+<td>访问被拒绝。IIS定义了几个不同的401错误，用于指示更为具体的错误原因。这些具体的错误代码在浏览器中显示，但不在IIS日志中显示。详见401状态码。</td>
+</tr>
+<tr>
+<td>403</td>
+<td>服务器拒绝请求。可以理解为没有权限访问此网站，服务器能够收到请求但拒绝提供服务。IIS定义了几个不同的403错误，用于指示更为具体的错误原因，详见403状态码。</td>
+</tr>
+<tr>
+<td>404</td>
+<td>服务器找不到请求的网页。例如，访问网站中不存在的页面，或者原有页面被移走或删除，则可能会出现该状态码。IIS定义了几个不同的404错误，用于只是更为具体的错误原因，详见404状态码。</td>
+</tr>
+<tr>
+<td>405</td>
+<td>用来访问本页面的HTTP谓词不被允许(方法不被允许)。当客户端向运行IIS的服务器发送一个HTTP请求，并且该请求包含服务器无法识别的HTTTP动词时，就会发生此错误，若要解决此问题，请确保客户端的请求使用与HTTP rfc兼容的HTTP动词。</td>
+</tr>
+<tr>
+<td>406</td>
+<td>客户端浏览器不接受所请求页面的MIME类型。</td>
+</tr>
+<tr>
+<td>407</td>
+<td>要求进行代理身份验证。</td>
+</tr>
+<tr>
+<td>412</td>
+<td>前提条件失败。</td>
+</tr>
+<tr>
+<td>413</td>
+<td>请求实体太大。</td>
+</tr>
+<tr>
+<td>414</td>
+<td>请求URI太长。</td>
+</tr>
+<tr>
+<td>415</td>
+<td>不支持的媒体类型。</td>
+</tr>
+<tr>
+<td>416</td>
+<td>无法满足请求的范围。</td>
+</tr>
+<tr>
+<td>417</td>
+<td>执行失败。</td>
+</tr>
+<tr>
+<td>423</td>
+<td>锁定的错误。</td>
+</tr>
+</tbody></table>
+<h2 id="401状态码"><a href="#401状态码" class="headerlink" title="401状态码"></a>401状态码</h2><table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>401.1</td>
+<td>用户名或密码无效导致登录失败。</td>
+</tr>
+<tr>
+<td>401.2</td>
+<td>服务器配置导致登录失败。</td>
+</tr>
+<tr>
+<td>401.3</td>
+<td>由于ACL对资源的限制而未获得授权。表示存在NTFS权限问题。即使您对试图访问的文件具备相应的权限，也可能发生此错误。例如，如果IUSR账户无权访问C:WinntSystem32Inetsrv目录，您会看到这个错误</td>
+</tr>
+<tr>
+<td>401.4</td>
+<td>筛选器授权失败</td>
+</tr>
+<tr>
+<td>401.5</td>
+<td>ISAPI&#x2F;CGI应用程序授权失败。</td>
+</tr>
+<tr>
+<td>401.7</td>
+<td>由Web服务器上的URL验证策略拒绝访问。这个错误代码为IIS 6.0所专用。</td>
+</tr>
+</tbody></table>
+<h2 id="403状态码"><a href="#403状态码" class="headerlink" title="403状态码"></a>403状态码</h2><table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>403.1</td>
+<td>执行访问被禁止。可能原因：<br />您没有足够的执行许可。例如，如果试图访问的 ASP 页所在的目录权限设为 “无”，或者，试图执行的 CGI 脚本所在的目录权限为 “只允许脚本”，将出现此错误消息。若要修改执行权限，请在 Microsoft 管理控制台（MMC）中右击目录，然后依次单击 “属性” 和 “目录” 选项卡，确保为试图访问的内容设置适当的执行权限。<br />您没有将试图执行的文件类型的脚本映射设置为识别所使用的谓词（例如，GET 或 POST）。若要验证这一点，请在 Microsoft 管理控制台中右键单击目录，依次单击 “属性”、“目录” 选项卡和 “配置”，然后验证相应文件类型的脚本映射是否设置为允许所使用的谓词。</td>
+</tr>
+<tr>
+<td>403.2</td>
+<td>读访问被禁止。验证是否已将 IIS 设置为允许对目录进行读访问。另外，如果您正在使用默认文件，请验证该文件是否存在。</td>
+</tr>
+<tr>
+<td>403.3</td>
+<td>写访问被禁止。验证 IIS 权限和 NTFS 权限是否已设置以便向该目录授予写访问权。</td>
+</tr>
+<tr>
+<td>403.4</td>
+<td>要求SSL禁用要求安全通道选项，或使用HTTPS代替HTTP来访问该页面</td>
+</tr>
+<tr>
+<td>403.5</td>
+<td>要求SSL128.禁用要求128位加密选项，或使用支持128位加密的浏览器以查看该页面，</td>
+</tr>
+<tr>
+<td>403.6</td>
+<td>IP地址被拒绝。您已经将服务器配置为拒绝访问您当前的IP地址。</td>
+</tr>
+<tr>
+<td>403.7</td>
+<td>要求客户端证书。您已经将服务器配置为要求提供证书进行客户端身份验证，但是您没有安装有效的客户端证书。</td>
+</tr>
+<tr>
+<td>403.8</td>
+<td>站点访问被拒绝。您已经为用来访问服务器的域设置了域名限制</td>
+</tr>
+<tr>
+<td>403.9</td>
+<td>用户数过多。与该服务器链接的用户数量超过了您设置的连接限制。注意：Microsoft Windows 2000 Professional和Windows XP Professional 自动设置了在IIS上最多10个连接的限制。您无法更改此限制</td>
+</tr>
+<tr>
+<td>403.10</td>
+<td>配置无效。</td>
+</tr>
+<tr>
+<td>403.11</td>
+<td>密码更改。</td>
+</tr>
+<tr>
+<td>403.12</td>
+<td>拒绝访问映射表。您要访问的页面要求提供客户端证书。但是，映射到该客户端证书的用户ID已经拒绝访问该文件。</td>
+</tr>
+<tr>
+<td>403.13</td>
+<td>客户端证书被吊销。</td>
+</tr>
+<tr>
+<td>403.14</td>
+<td>拒绝目录列表。</td>
+</tr>
+<tr>
+<td>403.15</td>
+<td>超出客户端访问许可。</td>
+</tr>
+<tr>
+<td>403.16</td>
+<td>客户端证书不受信任或无效</td>
+</tr>
+<tr>
+<td>403.17</td>
+<td>客户端证书已过期或尚未生效</td>
+</tr>
+<tr>
+<td>403.18</td>
+<td>在当前的应用程序池中不能执行所请求的URL。这个错误代码为IIS6.0所专用。</td>
+</tr>
+<tr>
+<td>403.19</td>
+<td>不能为这个应用程序池中的客户端执行CGI。这个错误代码为IIS6.0所专用</td>
+</tr>
+<tr>
+<td>403.20</td>
+<td>Passport登录失败。这个错误代码为IIS6.0所专用。</td>
+</tr>
+</tbody></table>
+<h2 id="404状态码"><a href="#404状态码" class="headerlink" title="404状态码"></a>404状态码</h2><table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>404.0</td>
+<td>没有找到文件或目录</td>
+</tr>
+<tr>
+<td>404.1</td>
+<td>无法通过请求的端口访问网站。此错误消息表明，试图访问的网站的IP地址不接受来自请求所用端口的请求。</td>
+</tr>
+<tr>
+<td>404.2</td>
+<td>Web服务扩展锁定策略阻止本请求。在IIS6.0中，表示Web服务扩展列表中已经阻止了该请求。</td>
+</tr>
+<tr>
+<td>404.3</td>
+<td>MIME映射策略阻止了此请求。如果存在下列情况，将出现此问题:<br/>1.未配置请求的文件扩展名的处理程序映射。<br/>2.没有为网站或应用或应用程序配置相应的MIME类型。</td>
+</tr>
+</tbody></table>
+<h2 id="5xx-服务器错误"><a href="#5xx-服务器错误" class="headerlink" title="5xx:服务器错误"></a>5xx:服务器错误</h2><table>
+<thead>
+<tr>
+<th>HTTP状态码</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>500</td>
+<td>内部服务器错误。很多服务器端错误都有可能导致此错误消息。事件查看器日志包含更详细的错误原因。此外，你可以禁用友好HTTP错误消息以便收到详细的错误说明。IIS定义了几个不同的500错误，用于指示更为具体的错误原因，详见500状态码。</td>
+</tr>
+<tr>
+<td>501</td>
+<td>页眉值指定了未实现的配置。</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Web服务器作为网关或代理服务器时，从上游服务器收到了无效响应。此类错误一般与服务器本身有关(与请求无关)。IIS定义了几个不同的502错误，用于指示更为具体的错误原因，详见502状态码。</td>
+</tr>
+<tr>
+<td>503</td>
+<td>目前服务器无法使用，一般是应为服务器超载或停止维护。</td>
+</tr>
+<tr>
+<td>504</td>
+<td>网关超时。</td>
+</tr>
+<tr>
+<td>505</td>
+<td>HTTP版本不受支持。</td>
+</tr>
+</tbody></table>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">汪阿杰</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/07/12/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/">http://example.com/2022/07/12/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">洋芋坨坨</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/%E6%A0%87%E7%AD%BE/%E7%BD%91%E7%BB%9C/">网络</a></div><div class="post_share"><div class="social-share" data-image="/img/images/computer2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/07/15/URL%E5%92%8CURI%E7%9A%84%E5%8C%BA%E5%88%AB/" title="URL和URI的区别？"><img class="cover" src="https://w.wallhaven.cc/full/85/wallhaven-85gw6k.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">URL和URI的区别？</div></div></a></div><div class="next-post pull-right"><a href="/2022/07/10/HTTP%E7%89%B9%E7%82%B9/" title="HTTP协议"><img class="cover" src="/img/images/IT.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTTP协议</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/07/10/HTTP%E7%89%B9%E7%82%B9/" title="HTTP协议"><img class="cover" src="/img/images/IT.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-10</div><div class="title">HTTP协议</div></div></a></div><div><a href="/2022/07/15/URL%E5%92%8CURI%E7%9A%84%E5%8C%BA%E5%88%AB/" title="URL和URI的区别？"><img class="cover" src="https://w.wallhaven.cc/full/85/wallhaven-85gw6k.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-15</div><div class="title">URL和URI的区别？</div></div></a></div><div><a href="/2022/07/18/%E5%88%B0%E5%BA%95%E4%BB%80%E4%B9%88%E6%98%AFCDN/" title="到底什么是CDN？"><img class="cover" src="/img/images/mesh2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-18</div><div class="title">到底什么是CDN？</div></div></a></div><div><a href="/2023/03/12/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%BE%93%E5%85%A5%E5%9C%B0%E5%9D%80%E5%90%8E%E6%93%8D%E4%BD%9C/" title="浏览器输入地址后的操作？"><img class="cover" src="/img/images/Internet.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-03-12</div><div class="title">浏览器输入地址后的操作？</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">汪阿杰</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/%E6%96%87%E7%AB%A0/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/%E6%A0%87%E7%AD%BE/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/%E5%88%86%E7%B1%BB/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://gitee.com/Master-momo"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是博客的公告</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">HTTP状态码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1xx-%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA"><span class="toc-number">1.1.</span> <span class="toc-text">1xx:信息提示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2xx-%E6%88%90%E5%8A%9F"><span class="toc-number">1.2.</span> <span class="toc-text">2xx:成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3xx-%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.3.</span> <span class="toc-text">3xx:重定向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4xx-%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%94%99%E8%AF%AF"><span class="toc-number">1.4.</span> <span class="toc-text">4xx:客户端错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#401%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">1.5.</span> <span class="toc-text">401状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#403%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">1.6.</span> <span class="toc-text">403状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#404%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">1.7.</span> <span class="toc-text">404状态码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5xx-%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%94%99%E8%AF%AF"><span class="toc-number">1.8.</span> <span class="toc-text">5xx:服务器错误</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/07/12/Redis/" title="Redis缓存"><img src="https://w.wallhaven.cc/full/85/wallhaven-85gw6k.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis缓存"/></a><div class="content"><a class="title" href="/2023/07/12/Redis/" title="Redis缓存">Redis缓存</a><time datetime="2023-07-12T03:18:57.000Z" title="发表于 2023-07-12 11:18:57">2023-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/18/RabbitMQ/" title="RabbitMQ消息队列"><img src="/img/images/Rabbit.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMQ消息队列"/></a><div class="content"><a class="title" href="/2023/06/18/RabbitMQ/" title="RabbitMQ消息队列">RabbitMQ消息队列</a><time datetime="2023-06-18T03:18:57.000Z" title="发表于 2023-06-18 11:18:57">2023-06-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/16/Nginx%E5%9F%BA%E7%A1%80/" title="Nginx基础"><img src="/img/images/nginx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Nginx基础"/></a><div class="content"><a class="title" href="/2023/05/16/Nginx%E5%9F%BA%E7%A1%80/" title="Nginx基础">Nginx基础</a><time datetime="2023-05-16T03:18:57.000Z" title="发表于 2023-05-16 11:18:57">2023-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/18/Linux/" title="Linux安装各种软件"><img src="/img/images/linux.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux安装各种软件"/></a><div class="content"><a class="title" href="/2023/04/18/Linux/" title="Linux安装各种软件">Linux安装各种软件</a><time datetime="2023-04-18T03:18:57.000Z" title="发表于 2023-04-18 11:18:57">2023-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/19/Docker/" title="Docker"><img src="/img/images/docker.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker"/></a><div class="content"><a class="title" href="/2023/03/19/Docker/" title="Docker">Docker</a><time datetime="2023-03-19T03:18:57.000Z" title="发表于 2023-03-19 11:18:57">2023-03-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/images/computer2.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 汪阿杰</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

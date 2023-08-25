@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Java基础 | 洋芋坨坨</title><meta name="author" content="汪阿杰"><meta name="copyright" content="汪阿杰"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="JAVA基础一、什么是JAVASun公司在1995年向外发布推广的一款面向对象的高级程序设计语言 其主要应用于互联网后端服务器开发，大数据，安卓，网页，游戏等领域 二、JAVA语言技术体系 JavaSE(Java Platform Standard Edition) Java标准版，主要包含Java基础语法，主要用于开发桌面软件及游戏  JavaME(Java Platform Micro Edi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础">
+<meta property="og:url" content="http://example.com/2023/01/05/JAVA%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="洋芋坨坨">
+<meta property="og:description" content="JAVA基础一、什么是JAVASun公司在1995年向外发布推广的一款面向对象的高级程序设计语言 其主要应用于互联网后端服务器开发，大数据，安卓，网页，游戏等领域 二、JAVA语言技术体系 JavaSE(Java Platform Standard Edition) Java标准版，主要包含Java基础语法，主要用于开发桌面软件及游戏  JavaME(Java Platform Micro Edi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/images/Java.jpg">
+<meta property="article:published_time" content="2023-01-05T03:18:57.000Z">
+<meta property="article:modified_time" content="2023-08-10T09:48:49.304Z">
+<meta property="article:author" content="汪阿杰">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/images/Java.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="http://example.com/2023/01/05/JAVA%E5%9F%BA%E7%A1%80/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"简","msgToSimplifiedChinese":"繁"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Java基础',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-10 17:48:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/%E6%96%87%E7%AB%A0/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/%E6%A0%87%E7%AD%BE/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/%E5%88%86%E7%B1%BB/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/images/Java.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="洋芋坨坨"><img class="site-icon" src="/img/avatar.png"/><span class="site-name">洋芋坨坨</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java基础</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-05T03:18:57.000Z" title="发表于 2023-01-05 11:18:57">2023-01-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-10T09:48:49.304Z" title="更新于 2023-08-10 17:48:49">2023-08-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/%E5%88%86%E7%B1%BB/Java/">Java</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java基础"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="JAVA基础"><a href="#JAVA基础" class="headerlink" title="JAVA基础"></a>JAVA基础</h1><h3 id="一、什么是JAVA"><a href="#一、什么是JAVA" class="headerlink" title="一、什么是JAVA"></a>一、什么是JAVA</h3><p>Sun公司在1995年向外发布推广的一款面向对象的高级程序设计语言</p>
+<p>其主要应用于互联网后端服务器开发，大数据，安卓，网页，游戏等领域</p>
+<h3 id="二、JAVA语言技术体系"><a href="#二、JAVA语言技术体系" class="headerlink" title="二、JAVA语言技术体系"></a>二、JAVA语言技术体系</h3><ol>
+<li><p>JavaSE(Java Platform Standard Edition)</p>
+<p>Java标准版，主要包含Java基础语法，主要用于开发桌面软件及游戏</p>
+</li>
+<li><p>JavaME(Java Platform Micro Edition)</p>
+<p>Java微型版，主要用于开发移动端设备和嵌入式设备的软件，如手机、pda、机顶盒、车载等</p>
+</li>
+<li><p>JavaEE(Java Platform Enterprise Edition)</p>
+<p>Java企业版，主要用于开发互联网企业后台服务器端，为企业级开发提供解决方案</p>
+<p>企业级软件：</p>
+<p>公司：OA、ERP、CRM、SNS、财务、人事考勤….</p>
+<p>学校：学生管理系统、宿舍管理系统、考试系统….</p>
+<p>互联网：百度，京东，淘宝，B站….</p>
+<p>其他：教育、视频、直播、电信、电力、金融、电商</p>
+</li>
+</ol>
+<h3 id="三、Java语言特点"><a href="#三、Java语言特点" class="headerlink" title="三、Java语言特点"></a>三、Java语言特点</h3><ol>
+<li>应用面广</li>
+<li>Java简单易学（相对于C&#x2F;C++）</li>
+<li>面向对象(更符合我们看待事务特点)</li>
+<li>跨平台(一处编译，处处运行)</li>
+<li>多线程(提升系统的运行性能和效率)</li>
+<li>分布式(解决高并发，高可用，高性能问题)</li>
+<li>健壮性(强类型、垃圾回收、异常处理)</li>
+<li>安全性</li>
+<li>开源</li>
+</ol>
+<h3 id="四、Java开发环境搭建"><a href="#四、Java开发环境搭建" class="headerlink" title="四、Java开发环境搭建"></a>四、Java开发环境搭建</h3><ol>
+<li><p>JVM</p>
+<p>Java Virtual Machine</p>
+<p>Java虚拟机</p>
+<p>Java程序是运行在虚拟机之上，JVM是Java程序能够实现跨平台的基础</p>
+</li>
+<li><p>JRE</p>
+<p>Java Runtime Environment</p>
+<p>Java运行时环境</p>
+<p>JRE&#x3D;JVM+运行时需要的环境</p>
+</li>
+<li><p>JDK</p>
+<p>Java Develop Kit</p>
+<p>Java 开发工具包</p>
+<p>提供给Java开发人员使用的，其中包含Java开发需要的软件</p>
+<p>JDK&#x3D;JRE+Java开发工具</p>
+</li>
+</ol>
+<h3 id="五、环境变量配置"><a href="#五、环境变量配置" class="headerlink" title="五、环境变量配置"></a>五、环境变量配置</h3><ol>
+<li><p>新建JAVA_HOME</p>
+<p>变量名：JAVA_HOME</p>
+<p>变量值：填写JDK 安装目录</p>
+</li>
+<li><p>新建CLASSPATH</p>
+<p>变量名：CLASSPATH</p>
+<p>变量值：.</p>
+<p>​		.;%JAVA_HOME%\lib</p>
+<p>​		.;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar</p>
+</li>
+<li><p>找到Path</p>
+<p>新建：%JAVA_HOME%\bin</p>
+<p>新建：%JAVA_HOME%\jre\bin</p>
+</li>
+</ol>
+<p>测试环境变量是否配置成功：</p>
+<ol>
+<li>win+R打开运行窗口</li>
+<li>输入cmd。点击确定打开命令行窗口</li>
+<li>输入javac或者java -version</li>
+<li>显示日志或者版本号则表明配置成功，不显示则表示配置失败</li>
+</ol>
+<h3 id="六、跨平台"><a href="#六、跨平台" class="headerlink" title="六、跨平台"></a>六、跨平台</h3><p>因为有了JVM，同一份字节码文件可以在三个不同的平台上都能运行，这样就实现了Java程序的跨平</p>
+<h3 id="七、第一个Java程序"><a href="#七、第一个Java程序" class="headerlink" title="七、第一个Java程序"></a>七、第一个Java程序</h3><ol>
+<li><p>Java项目的目录结构</p>
+<p>Java Project</p>
+<p>Java工程，Java项目，可以理解为是一个总文件夹</p>
+<p>JRE System Library</p>
+<blockquote>
+<p>Java运行环境(系统库)</p>
+</blockquote>
+<p>src</p>
+<blockquote>
+<p>编写Java源代码的位置</p>
+</blockquote>
+<p>bin</p>
+<blockquote>
+<p>用于存储编译后的.class字节码文件</p>
+</blockquote>
+</li>
+<li><p>Package</p>
+<p>包，创建在src下面，可以理解为是一个子文件夹</p>
+</li>
+<li><p>Class</p>
+<p>类，创建在Package下面，就是一个Java源文件</p>
+</li>
+<li><p>Java程序运行方式</p>
+<p>4.1 菜单栏点击绿色箭头</p>
+<p>4.2 右键–&gt;Run As–&gt;Java Application</p>
+<p>4.3 Ctrl+F11</p>
+</li>
+<li><p>Java中注释</p>
+</li>
+<li><p>注释：对Java代码起到一个解释说明的作用，不参与编译和运行过程，相当于产品说明书</p>
+<p>单行注释：&#x2F;&#x2F;</p>
+<p>多行注释：&#x2F;*</p>
+<p>​		*&#x2F;</p>
+<p>文档注释：&#x2F;**</p>
+<p>​		*&#x2F;</p>
+<blockquote>
+<p>注意：main函数，程序执行的入口</p>
+<p>public static void main(String[] args){}</p>
+<p>注意：输出语句</p>
+<p>System.out.println(“要输出的内容”);</p>
+</blockquote>
+</li>
+<li><p>基本语法规范</p>
+<p>7.1大小写严格区分</p>
+<p>7.2中英文严格区分（所有阔符号如为</p>
+<p>7.3括号必须成对出现</p>
+<p>7.4没行代码结束之后必须以分号结尾</p>
+<p>7.5大括号标识一个结构，结尾不用打分号</p>
+</li>
+<li><p>进制</p>
+<ol>
+<li><p>二进制：</p>
+<p>逢二进一</p>
+<p>二进制转十进制</p>
+<p>二进制 权（2^n)</p>
+</li>
+<li><p>十进制：</p>
+<p>逢十进一</p>
+<p>十进制转二进制 短除法    </p>
+</li>
+<li><p>八进制：                </p>
+<p>逢八进一              </p>
+</li>
+<li><p>十六进制：</p>
+<p>逢十六进一</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>10进制</th>
+<th>2进制</th>
+<th>8进制</th>
+<th>16进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0000</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0001</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0010</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0011</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0101</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0110</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0111</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1000</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1001</td>
+<td>11</td>
+<td>9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1010</td>
+<td>12</td>
+<td>A</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1011</td>
+<td>13</td>
+<td>B</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1100</td>
+<td>14</td>
+<td>C</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1101</td>
+<td>15</td>
+<td>D</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1110</td>
+<td>16</td>
+<td>E</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1111</td>
+<td>17</td>
+<td>F</td>
+</tr>
+<tr>
+<td>16</td>
+<td>10000</td>
+<td>20</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<p>在计算机中所有的数据(图片、音频、文本等资源)都是以2进制补码形式进行存储</p>
+<p>根据原码计算补码：</p>
+<ol>
+<li><p>原码和补码是以0开头的数字表示正数，以1开头的数字表示负数，最前面1位是符号位</p>
+</li>
+<li><p>正数的补码和他的原码是相同的</p>
+</li>
+<li><p>负数的补码是他的原码符号位不变，其他位取反再加1</p>
+<p>如果数据超出4位补码所能表示的范畴，</p>
+<p>超出8位采用补码来进行表示，</p>
+<p>超出8位采用16位</p>
+<p>超出16位采用</p>
+</li>
+</ol>
+<p>原码：</p>
+<p>十进制 7 &#x3D;&#x3D;二进制0111；-7 &#x3D;&#x3D;10000111，最高位表示符号位</p>
+<p>反码：</p>
+<p>正数和原码一样，负数除去最高位其余位取反，例如 -7 &#x3D;&#x3D; 1 1111000</p>
+<p>补码：</p>
+<p>正数和原码一样，负数–&gt;补码等于反码加1;例如 -7 &#x3D;&#x3D;反码 1 1111000 + 1 &#x3D;&#x3D;1 1111001</p>
+<p>总结：</p>
+<p>4位2进制补码最多可以表示2^4个数</p>
+<p>范围-2^3—-&gt;2^3-1</p>
+<p>8位2进制补码最多可以表示2^8个数</p>
+<p>范围-2^8—&gt;2^8-1</p>
+<p>16位2进制补码最多可以表示2^16个数</p>
+<p>范围-2^15—&gt;2^15-1</p>
+<p>32位2进制补码最多可以表示2^31个数</p>
+<p>范围-2^31—&gt;2^31-1</p>
+<p>64位2进制补码最多可以表示2^64个数</p>
+<p>范围-2^63—&gt;2^63-1</p>
+<p>在计算机中1个0或者1个1被称为叫1位</p>
+<p>用 1 bit 表示,bit是计算机最小的数据存储单元</p>
+<p>8位2进制补码通常被称为1个字节,用1byte来进行表示，是计算机中最小的操作单元</p>
+<p>1byte &#x3D; 8bit</p>
+<p>1kb &#x3D; 1024byte</p>
+<p>1mb &#x3D; 1024kb</p>
+<p>1gb &#x3D; 1024mb</p>
+</li>
+<li><p>变量</p>
+<ol>
+<li><p>什么是变量</p>
+<p>对应的是内存中的一块存储空间，可以用来存储一个值变量可以进行命名，可以通过变量名来操作变量中所存储的值变量中所存储的值是可以改变的</p>
+</li>
+<li><p>变量的使用</p>
+<p>定义一个变量，类型为int，名称为X    int &#x3D; 10；</p>
+<p>将10赋值给X</p>
+<p>&#x3D; 理解为赋值，将右侧的值赋值给左侧的变量</p>
+</li>
+<li><p>变量得定义和赋值</p>
+<p>定义：也叫声明，在内存中开辟了一块空间</p>
+<p>赋值：往往这块空间中存储一个数据</p>
+</li>
+<li><p>变量的作用域范围</p>
+<p>从变量的定义的地方开始，到他所属代码块的结束</p>
+<p>离开作用域范围后，该变量将被系统回收（无效了）</p>
+</li>
+<li><p>变量的命名规范</p>
+<ul>
+<li>强制性命名规范（不遵守就报错）</li>
+<li>建议性命名规范（不遵守不会报错，但是不专业）</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>数据类型</p>
+<ul>
+<li><p>八种基本类型</p>
+<ol>
+<li><p>整数类型（有范围）</p>
+<p>1.1 byte  字节型 一个字节8位，范围  -2^7~2^7-1</p>
+<p>1.2 short 短整型 两个字节16位，范围 -2^15~2^15-1</p>
+<p>1.3 int  整型 四个字节32位，范围 -2^31~2^31-1</p>
+<p>1.4 long 长整型 八个字节64位，范围 -2^63~2^63-1</p>
+<p>​	如果右侧值超出了int最大值或最小值范围必须在数字后面带上L或者l</p>
+<p>​	其中一个整数变成long类型，结果值就是long类型</p>
+<p>在Java种，int是整数的默认类型</p>
+<p>将一个整数赋值给byte类型变量时，会去掉前面3个字节，保留最后一个字节，所以右侧整数值不能超过byte范围</p>
+<p>将一个整数赋值给short类型变量时，会去掉前面2个字节保留最后2个字节，所以右侧整数值不能超过short范围</p>
+<p>将一个整数赋值给long类型变量时</p>
+<p>如果右侧整数值超过了int的范围，必须带上L或l，将右侧默认的32值改为64</p>
+<p>如果右侧整数数值诶有超出int范围，可以带上L或者l也可以不带，如果不带，整数前面补上32个0，负数前面补上32个1一般建议long类型都带上L或者l</p>
+</li>
+<li><p>小数类型</p>
+<p>2.1 float</p>
+<p>​	单精度浮点</p>
+<p>​	32位，一个符号位，23个尾数位，8个指数位</p>
+<p>2.2 double</p>
+<p>​	双精度浮点</p>
+<p>​	64位，一个符号位，52个尾数位，11个指数位</p>
+<p>​	浮点数默认时double –&gt;加上F或者f将右侧浮点数变为flaot类型 </p>
+</li>
+<li><p>字符类型</p>
+<p>char: 主要用于存储Java中的单个字符，其本质上存储的是一个16位无符号位(从0开始，最前面一位不表示符号）的整数，其范围[0~65535],使用char定义字符时，必须使用单引号引起来。且单引号中只能定义一个字符</p>
+<p>​	编码：</p>
+<p>​	给计算机中每个字符编一个数字，在计算机中存储这个字符时，实质上存储的是该字符对应的数字，再取出该数字时，再参考编码表，将该数字转化成字符</p>
+<p>​	ASCII编码</p>
+<p>​	只收录了英文字母和数字以及其他符号，范围时0-127,是单字节编码</p>
+<p>​	Unicode编码</p>
+<p>​	统一码，万国码</p>
+<p>​	科学家统计了世界上几乎所有国家的语言文字，符号以及括号等，给每个字符都进行统一的编码，Unicode编码采用的是固定的双字节编码。范围0-65535，完全兼容ASCII编码</p>
+<p>Java中的char类型参考的就是Unicode编码表</p>
+<p>使用一个4位16进制Unicode编码来表示一个字符 例如：’\u0064’</p>
+</li>
+<li><p>布尔类型</p>
+<p>boolean，用于表示真和假</p>
+<p>该类型只有两个值，true和false，true表示真，false表示假，该类型一般用于判断</p>
+</li>
+<li><p>String 字符串类型</p>
+<p>字符：</p>
+<p>​	只能用于存储单个字符，使用单引号引起来</p>
+<p>字符串：</p>
+<p>​	可以用于同时存储一道多个字符，使用双引号引起来</p>
+<p>​	字符串可以和任意类型的变量之间使用+做拼接，拼接完成后的结果还是一个字符串</p>
+<p>两侧都不是字符串时，+就是加法运算</p>
+</li>
+<li><p>类型转换</p>
+<p>一般只会发生在整数裂隙和浮点类型之间，char字符类型只跟int整形之间转换，且都需要强转</p>
+<p>byte-&gt;short-&gt;int-&gt;long-&gt;float-&gt;double</p>
+<p>​</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>运算符</p>
+<ol>
+<li><p>算术运算符</p>
+<p>加号	减号	乘号	除号	自加	自减</p>
+<p>X++:后加加 先赋值，后自身加1</p>
+<p>++X:前加加 先自身加1，后赋值</p>
+<p>X–:后减减 先赋值 后自身减1</p>
+<p>–X:前减减 先自身减1 后赋值</p>
+<table>
+<thead>
+<tr>
+<th>int a &#x3D; 10;</th>
+<th>a++ &#x3D;10;</th>
+<th>a &#x3D; 11</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int a &#x3D; 10;</td>
+<td>++a &#x3D; 11;</td>
+<td>a &#x3D; 11;</td>
+</tr>
+<tr>
+<td>int a &#x3D; 10;</td>
+<td>a– &#x3D; 10;</td>
+<td>a &#x3D; 9;</td>
+</tr>
+<tr>
+<td>int a &#x3D; 10;</td>
+<td>–a &#x3D; 11;</td>
+<td>a &#x3D; 9;</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>比较运算符</p>
+<p>小于号	大于号	小于等于号	大于等于号	等号	不等于号</p>
+</li>
+<li><p>赋值运算符</p>
+<p>&#x3D;	+&#x3D;	-&#x3D;	*&#x3D;	&#x2F;&#x3D;	%&#x3D;</p>
+</li>
+<li><p>逻辑运算符</p>
+<p>&amp;&amp; : 逻辑与：&amp;&amp;并且（左右两边只能时布尔类型表达式）左侧表达式一&amp;&amp;右侧表达式二只有当布尔表达式一和布尔表达式二都是true的时候结果才是true，任何一个表达式的值为False 结果都是false</p>
+<p>短路与：false &amp;&amp; 布尔表达式</p>
+<p>逻辑与运算，如果左侧表达式计算结果为false那么右侧表达式二无论时true还是false结果都是False,此时右侧布尔表达式二值不参计算</p>
+<p>|| :逻辑或 左侧表达式一 || 右侧表达式二	只要左侧布尔表达式一和右侧表达式二任意一个值为true结果就是true只有当两个表达式都是false的时候，结果才是false。</p>
+<p>短路或：true || 表达式二</p>
+<p>逻辑或运算，如果左侧布尔值表达式计算结果为true，那么布尔表达式二的值无论时true还是false结果都是true此时右侧表达式不参与计算。 	</p>
+<p>！：逻辑非 ！后跟一个布尔表达式，非true就是false。非false就是true</p>
+<p>逻辑与的优先级高于逻辑或</p>
+</li>
+<li><p>三项运算符</p>
+<p>?:</p>
+</li>
+<li><p>不常用——————位运算符</p>
+<p>&amp;  位与   1 true   0 false   按位求与</p>
+<p>|  位或   1 true   0 false   按位求或</p>
+<p>~  位非   1变0     0变1</p>
+<p>^  异或   相同取0    不同取1</p>
+</li>
+<li><p>位移运算符</p>
+<p>&gt;&gt; 带符号右移	正数右移左侧补0，负数右移左侧补1</p>
+<p>&gt;&gt;&gt; 无符号右移   正数负数右移，左侧补0</p>
+<p>&lt;&lt; 带符号左移    正数负数左移，右侧补0</p>
+</li>
+</ol>
+</li>
+<li><p>分支</p>
+<p><strong>if</strong></p>
+<p>如果布尔表达式判断位true则执行大括号中代码，如果为false则不执行</p>
+<p>不论时true还是false都不影响后续带啊吗执行</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>（布尔表达式）&#123;</span><br><span class="line">		代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果布尔表达式为true则则执行i放后面的大号中的代码块yiruguo weil false,则执行else后面的大括号中代码块2</p>
+<p>如果i发或者else后面大括号中有一块代码可以省略大括号</p>
+<p>多层嵌套</p>
+<p>if（布尔表达式）{代码块一}else if(布尔表达式){代码块二}</p>
+<p>从上往下逐一判断所有if中的布尔表达式，只要有一个布尔表达式为true，就执行后面大括号中代码，执行完成后九立即跳出整个分支判断，后续的布尔表达式不在判断，如果所有布尔表达式判断为false，则执行else中代码块</p>
+<p><strong>switch_case</strong></p>
+<p>从上往下逐一和switch的变量进行匹配，如果匹配上了就执行case后面的代码块，如果碰到break就跳出整个分支判断，如果没有break就继续往下执行，知道碰到一个break再跳出如果所有case后面的值都没有匹配上联络就执行default下面的代码块。</p>
+<p>swicth 后面小括号中允许的变量类型</p>
+<p>jdk vetsion&lt;&#x3D;1.6</p>
+<p>byte short int char enum</p>
+<p>jdk version&gt;&#x3D;1.7</p>
+<p>byte  short int char enum String</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(变量)&#123;</span><br><span class="line">        <span class="keyword">case</span> 值：</span><br><span class="line">            代码块</span><br><span class="line">            <span class="keyword">break</span>；</span><br><span class="line">        <span class="keyword">case</span> 值<span class="number">2</span>：</span><br><span class="line">            <span class="keyword">break</span>；</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">        	<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>循环</p>
+<p>重复的去执行某一段代码  </p>
+<p><strong>for</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(初始化表达式；布尔表达式；修改循环体变量)&#123;</span><br><span class="line">	循环体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>布尔表达式为true则执行循环体，为false跳出循环</p>
+<p>死循环：布尔表达式不写或者第二个表达式为true或者第三个表达式没有</p>
+<p><strong>while</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(布尔表达式)&#123;</span><br><span class="line">    循环体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>先判断，后执行循环体</p>
+<p><strong>do_while</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">    循环体</span><br><span class="line">&#125; <span class="keyword">while</span> (布尔表达式)</span><br></pre></td></tr></table></figure>
+
+<p>先执行一次循环体，再判断是否继续执行</p>
+</li>
+<li><p>数组</p>
+<ol>
+<li><p>概念</p>
+<p>对应内存中一块连续的储存空间，主要用于存储多个连续且类型相同的数据，数据中的每个数据叫做数组的元素</p>
+</li>
+<li><p>定义和赋值</p>
+<p>静态初始化只能在定义的时候赋值</p>
+<p>动态初始化支持先定义后赋值</p>
+</li>
+<li><p>特点</p>
+<p>数组长度一旦确定就无能改变了</p>
+<p>可以通过下标来获取或修改数组中的元素</p>
+<p>数组中元素的下标从左到右，从0开始每次递增，最小下标0，最大下标length-1</p>
+</li>
+<li><p>数组扩容</p>
+<p>因为数组的长度是不可变的，所以扩容实质上创新的长度不一样的数组，然后原来的数组中的元素复制到新的数组中</p>
+<ol>
+<li><p>带返回值</p>
+<p>新数组 &#x3D; Arrays.copyOf(原数组，新数组的长度)</p>
+</li>
+<li><p>不带返回值</p>
+<p>System.arraycopy(原数组，数组开始复制元素的下标，新数组，往新数组第几个下标位置开始放元素，从原数组复制几个元素到新数组)；</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.arraycopy(Object src,<span class="type">int</span> srcPos,Object dest, <span class="type">int</span> destPos,<span class="type">int</span> length)</span><br></pre></td></tr></table></figure>
+
+<p>Object src  原数组   int srcPos 原数组开始复制元素的下标</p>
+<p>Object dest 新数组   int destPos 往新数组第几个下标位置开始放元素</p>
+<p>int length  从原数组复制几个元素复制到新数组</p>
+</li>
+<li><p>二维数组</p>
+<p>二维数组遍历，外层循环控制二维数组中的一位数组的下标，内层循环控制一位数组中元素的下标</p>
+</li>
+<li><p>数组的遍历</p>
+<p>通过元素的下标遍历，下标范围0~length</p>
+<p>for循环遍历</p>
+<p>for~each迭代器</p>
+</li>
+<li><p>数组元素排序</p>
+<p>将数组中元素按顺序从小到大或者 从大到小进行排序</p>
+<ol>
+<li><p>冒泡排序</p>
+<p>思想：第一次比较相邻的两个元素，若前面的元素比后面的元素大则交换，没一趟比较完成后，都能从剩下元素中选出一个最大值</p>
+</li>
+<li><p>插入排序</p>
+<p>思想：将数组分为有序和无序两堆，每次从无序数组中取出第一个元素和有序数组 中的元素从后往前逐个比较，若比他小则交换，若比他大则停止交换</p>
+</li>
+<li><p>选择排序</p>
+<p>思想：每次从待排序的数组中选出一个最小值，将其放在已经排序好的数组的最后面，直到所有元素都排序完成</p>
+</li>
+<li><p>快速排序</p>
+</li>
+<li><p>桶排序</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>函数</p>
+<ol>
+<li><p>什么是函数</p>
+<p>对代码块的提取和封装，并对其进行命名，也就是函数名，然后通过函数名可以对函数的调用，函数存在的目的是为了减少重复代码，实现代码复用</p>
+</li>
+<li><p>函数的定义</p>
+<p>返回值类型</p>
+<p>如果函数执行完成后需要给调用者一个返回值那么返回值类型就必须于结果值类型相同，同时在函数的最后通过return结果值</p>
+<p>如果函数执行完成后不需要返回结果给调用者，那么返回值类型就写void代表无返回们同时函数中不能写return标识函数到此结束</p>
+<p>return返回值</p>
+<p>将函数计算的结果返回调用者，同时函数执行到此结束</p>
+<p>return</p>
+<p>指标是函数执行到此结束</p>
+<p>命名规范和变量名相同</p>
+<p>形参，形式参数</p>
+<p>形参的作用就是规定传给函数的值必须是什么类型，在函数调用时会将实参值赋给形参</p>
+</li>
+<li><p>函数重载</p>
+<p>同名不同参</p>
+<p>一个类中多个函数之间函数名称相同但是参数列表不同但是参数列表不同，与返回值无关</p>
+</li>
+<li><p>函数的可变参数</p>
+<p>定义一个函数，用于计算若干个整数的和传入几个整数，就将几个整数的和加起来，然后返回给调用者</p>
+<p>语法：add(int… arr)</p>
+<p>在调用add()函数时可以传入0到多个实参数值，在函数内部可变参数可以当做是数组来使用，可以进行遍历获取长度使用下标</p>
+<p>注意：</p>
+<ol>
+<li>一个函数中最多只能有一个可变参数</li>
+<li>如果有其他形参时，可变参数必须放在最后</li>
+</ol>
+</li>
+<li><p>函数递归</p>
+<p>注意：</p>
+<ol>
+<li>递归必须指定结束条件，否则就会报错StackOverFlowError错误，栈内存溢出</li>
+<li>递归的效率非常低一般不建议使用</li>
+</ol>
+<p>递归的常见使用场景</p>
+<ol>
+<li>求一个数的阶乘</li>
+<li>求一个数的累加和</li>
+<li>求斐波那契数列</li>
+<li>文件夹遍历</li>
+<li>二叉树</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>标识符</p>
+<p>有程序员自己定义的包名、类名、变量名、函数名，需要满足一定的规范</p>
+<ol>
+<li>强制性规范</li>
+<li>建议性规范</li>
+</ol>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">汪阿杰</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/01/05/JAVA%E5%9F%BA%E7%A1%80/">http://example.com/2023/01/05/JAVA%E5%9F%BA%E7%A1%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">洋芋坨坨</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/%E6%A0%87%E7%AD%BE/Java/">Java</a></div><div class="post_share"><div class="social-share" data-image="/img/images/Java.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/06/JavaAPI/" title="Java常用API"><img class="cover" src="/img/images/computer.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Java常用API</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/28/JavaScript/" title="JavaScript"><img class="cover" src="/img/images/computer3.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JavaScript</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/02/02/JDBC/" title="JDBC"><img class="cover" src="https://w.wallhaven.cc/full/85/wallhaven-85gw6k.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-02</div><div class="title">JDBC</div></div></a></div><div><a href="/2023/01/06/JavaAPI/" title="Java常用API"><img class="cover" src="/img/images/computer.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-06</div><div class="title">Java常用API</div></div></a></div><div><a href="/2023/01/10/%E9%9B%86%E5%90%88/" title="集合"><img class="cover" src="/img/images/computer4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-10</div><div class="title">集合</div></div></a></div><div><a href="/2023/01/15/%E7%BA%BF%E7%A8%8B/" title="线程Thread"><img class="cover" src="/img/images/computer4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-15</div><div class="title">线程Thread</div></div></a></div><div><a href="/2023/01/07/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="面向对象"><img class="cover" src="/img/images/computer3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-07</div><div class="title">面向对象</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">汪阿杰</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/%E6%96%87%E7%AB%A0/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/%E6%A0%87%E7%AD%BE/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/%E5%88%86%E7%B1%BB/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://gitee.com/Master-momo"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是博客的公告</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JAVA%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">JAVA基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFJAVA"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、什么是JAVA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81JAVA%E8%AF%AD%E8%A8%80%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、JAVA语言技术体系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81Java%E8%AF%AD%E8%A8%80%E7%89%B9%E7%82%B9"><span class="toc-number">1.0.3.</span> <span class="toc-text">三、Java语言特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.0.4.</span> <span class="toc-text">四、Java开发环境搭建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE"><span class="toc-number">1.0.5.</span> <span class="toc-text">五、环境变量配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E8%B7%A8%E5%B9%B3%E5%8F%B0"><span class="toc-number">1.0.6.</span> <span class="toc-text">六、跨平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.0.7.</span> <span class="toc-text">七、第一个Java程序</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/07/12/Redis/" title="Redis缓存"><img src="https://w.wallhaven.cc/full/85/wallhaven-85gw6k.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis缓存"/></a><div class="content"><a class="title" href="/2023/07/12/Redis/" title="Redis缓存">Redis缓存</a><time datetime="2023-07-12T03:18:57.000Z" title="发表于 2023-07-12 11:18:57">2023-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/18/RabbitMQ/" title="RabbitMQ消息队列"><img src="/img/images/Rabbit.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMQ消息队列"/></a><div class="content"><a class="title" href="/2023/06/18/RabbitMQ/" title="RabbitMQ消息队列">RabbitMQ消息队列</a><time datetime="2023-06-18T03:18:57.000Z" title="发表于 2023-06-18 11:18:57">2023-06-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/16/Nginx%E5%9F%BA%E7%A1%80/" title="Nginx基础"><img src="/img/images/nginx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Nginx基础"/></a><div class="content"><a class="title" href="/2023/05/16/Nginx%E5%9F%BA%E7%A1%80/" title="Nginx基础">Nginx基础</a><time datetime="2023-05-16T03:18:57.000Z" title="发表于 2023-05-16 11:18:57">2023-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/18/Linux/" title="Linux安装各种软件"><img src="/img/images/linux.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux安装各种软件"/></a><div class="content"><a class="title" href="/2023/04/18/Linux/" title="Linux安装各种软件">Linux安装各种软件</a><time datetime="2023-04-18T03:18:57.000Z" title="发表于 2023-04-18 11:18:57">2023-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/19/Docker/" title="Docker"><img src="/img/images/docker.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker"/></a><div class="content"><a class="title" href="/2023/03/19/Docker/" title="Docker">Docker</a><time datetime="2023-03-19T03:18:57.000Z" title="发表于 2023-03-19 11:18:57">2023-03-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/images/Java.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 汪阿杰</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
